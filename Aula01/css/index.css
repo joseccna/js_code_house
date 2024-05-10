@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+nav div ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav div ul li{
+    padding-inline-start: 20px;
+}
+
+
