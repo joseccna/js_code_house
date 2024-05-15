@@ -1,0 +1,28 @@
+
+ATIVIDADE EXTRA
+Criar um algoritmo com uma condicional
+
+Descrição
+✓ Crie um algoritmo que solicite ao 
+usuário um ou mais valores inseridos 
+por prompt(),
+✓ Compare as entradas 
+✓ Mostre o resultado por console ou 
+alert() de acordo com os valores 
+inseridos e as condições cumpridas.
+Observação
+✓ Não há entrega dessa atividade.
+
+Exemplos
+✓ Solicitar um número através do prompt 
+e, se for maior que 1000, mostrar um 
+alert.
+✓ Solicitar um texto através de prompt e, 
+se for igual a “Olá“, mostrar uma 
+mensagem no console.
+✓ Solicitar um número através do prompt 
+e verificar se está entre 10 e 50. Em 
+caso positivo, mostrar um alert.
+Formato
+✓ Formato indicado pelo professor. Nome 
++ Sobrenome.
