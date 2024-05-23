@@ -1,7 +1,14 @@
 function receber(){
-    let primeiro = document.getElementById("primeiro");
-    console.log(primeiro.value);
+    let primeiro = parseInt(document.getElementById("primeiro").value);
 
-    let segundo = document.getElementById("segundo");
-    console.log(segundo.value);
+    let segundo = parseInt(document.getElementById("segundo").value);
+
+    let resultaldo = primeiro % segundo;
+
+    if(resultaldo === 0){
+        document.getElementById('resultado').innerText ="O número " + primeiro +" é múltiplo do número "+ segundo;
+    }
+    else{
+        document.getElementById('resultado').innerText ="O número " + primeiro +" não é múltiplo do número "+ segundo;
+    }
 }
