@@ -3,43 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pessoal.css">
     <title>Simulação</title>
 </head>
 <body>
 
     <div class="testbox">
         <form >
-          <p id="h1">Crédito Novo</p>
+          <p id="h1">Empréstimo pessoal</p>
           <p id="h4">Digite o valor do emprestimo minimo R$500 maximo R$30000</p>
           <input placeholder="R$" type="text" class="input" id="valor">
           
-          <p id="h4">Escolha quantos meses.<span></span></p>
+          <p id="h4" class="meses">Escolha a quantidades das parcelas<span></span></p>
           <table>
             <tbody><tr>
               <th class="first-col"></th>
+              <th>03 meses</th>
+              <th>06 meses</th>
+              <th>09 meses</th>
               <th>12 meses</th>
-              <th>24 meses</th>
-              <th>36 meses</th>
-              <th>48 meses</th>
             </tr>
-            <tr id="parcelas">
+            <tr>
+                <td class="first-col">Parcelas</td>
+                <td><input name="point#2" value="3" type="radio" id="parcela03" onclick="parcela_03()"></td>
+                <td><input name="point#2" value="6" type="radio" id="parcela06" onclick="parcela_06()"></td>
+                <td><input name="point#2" value="9" type="radio" id="parcela09" onclick="parcela_09()"></td>
+                <td><input name="point#2" value="12" type="radio" id="parcela12" onclick="parcela_12()"></td>
+              </tr>
+            <tr>
+                <th class="first-col"></th>
+                <th>24 meses</th>
+                <th>36 meses</th>
+                <th>48 meses</th>
+                <th>60 meses</th>
+              </tr>
+
+            <tr>
               <td class="first-col">Parcelas</td>
-              <td><input name="point#2" value="12" type="radio" id="parcela12" onclick="parcela_12()"></td>
+
               <td><input name="point#2" value="24" type="radio" id="parcela24" onclick="parcela_24()"></td>
               <td><input name="point#2" value="36" type="radio" id="parcela36" onclick="parcela_36()"></td>
               <td><input name="point#2" value="48" type="radio" id="parcela48" onclick="parcela_48()"></td>
+              <td><input name="point#2" value="60" type="radio" id="parcela60" onclick="parcela_60()"></td>
             </tr>
           </tbody></table>
-          <p id="h4">Feel free to add any other comments or suggestions:</p>
-          <textarea rows="5"></textarea>
+          <p id="h4" class="meses" >Simulação do emprestimo pessoal:</p>
+          <textarea rows="5" id='resposta'></textarea>
         </form>
-        <div class="btn-block">
-            <button  type="btn" onclick="Credito_evento()">Send Feedback</button>
-          </div>
       </div>
 
 
-    <script src="script.js"></script>
+    <script src="pessoal.js"></script>
 </body>
 </html>

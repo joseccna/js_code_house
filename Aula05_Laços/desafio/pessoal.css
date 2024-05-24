@@ -18,6 +18,11 @@ form, p {
   #h4 {
     margin: 20px 0 2px;
     color: #000;
+    font-size: 14px;
+  }
+
+  .meses{
+    text-align: center;
   }
   
   .testbox {
@@ -29,7 +34,7 @@ form, p {
   }
   
   form {
-    width: 100%;
+    width: 400px;
     padding: 20px;
     background: #EBEBE1;
     box-shadow: 0 2px 5px #ccc;
@@ -77,6 +82,7 @@ form, p {
     width: calc(100% - 6px);
     background: #F7F7F7;
     border-radius: 5px;
+    font-size: 16px;
   }
   
   .btn-block {
@@ -84,22 +90,6 @@ form, p {
     text-align: center;
   }
   
-  button {
-    width: 150px;
-    padding: 10px;
-    border: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: #F3D153;
-    font-size: 16px;
-    color: #000;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    opacity: .9;
-  }
   
   @media (min-width: 568px) {
     th, td {

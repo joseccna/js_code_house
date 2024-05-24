@@ -1,6 +1,24 @@
 
 
 
+function parcela_03(){
+    let parcelas = 0
+    parcelas = parseInt(document.getElementById('parcela03').value);
+    recebe_mes(parcelas);
+}
+
+function parcela_06(){
+    let parcelas = 0
+    parcelas = parseInt(document.getElementById('parcela06').value);
+    recebe_mes(parcelas);
+}
+
+function parcela_09(){
+    let parcelas = 0
+    parcelas = parseInt(document.getElementById('parcela09').value);
+    recebe_mes(parcelas);
+}
+
 function parcela_12(){
     let parcelas = 0
     parcelas = parseInt(document.getElementById('parcela12').value);
@@ -25,6 +43,12 @@ function parcela_48(){
     recebe_mes(parcelas);
 }
 
+function parcela_60(){
+    let parcelas = 0
+    parcelas = parseInt(document.getElementById('parcela60').value);
+    recebe_mes(parcelas);
+}
+
 function recebe_mes(parcela1){
    let recebeMes = parcela1;
    valor = parseInt(document.getElementById('valor').value);
@@ -32,10 +56,13 @@ function recebe_mes(parcela1){
         alert('Favor colocar o valor do emprestimo!')
     }
  
+    
     let emprestimo = valor; // Valor financiado
     let i = 0.0794;  // Taxa de juros mensal
     let parcela = recebeMes;     // Número de parcelas
     
+
+
     // Cálculo da parcela mensal (PMT)
     let mensal = emprestimo * (i * Math.pow(1 + i, parcela)) / (Math.pow(1 + i, parcela) - 1);
     // Valor total pago (VT)
@@ -44,42 +71,12 @@ function recebe_mes(parcela1){
     // Juros totais (J)
     let juros = total - emprestimo;
 
-    // Exibindo os resultados
-    console.log("Parcela mensal (PMT): R$ " + mensal.toFixed(2));
-    console.log("Valor total pago (VT): R$ " + total.toFixed(2));
-    console.log("Juros totais (J): R$ " + juros.toFixed(2));
+    // Exibindo os resultados com quebras de linha
+    document.getElementById('resposta').value =
+    "Parcela mensal:   R$ " + mensal.toFixed(2) + "\n" +
+    "Valor total pago: R$ " + total.toFixed(2) + "\n" +
+    "Juros totais:     R$ " + juros.toFixed(2);
 
 
 }
 
-// function Credito_evento(){
-//     let valor = 0
-//     valor = parseInt(document.getElementById('valor').value);
-//     console.log(valor);
-//     let rescebe_meses =  0;
-//     rescebe_meses = recebe_mes(emviar());
-
-
-// }
-
-
-
-// // Dados do problema
-// let emprestimo = 30000; // Valor financiado
-// let i = 0.0794;  // Taxa de juros mensal
-// let parcela = 48;     // Número de parcelas
-
-
-// // Cálculo da parcela mensal (PMT)
-// let mensal = emprestimo * (i * Math.pow(1 + i, parcela)) / (Math.pow(1 + i, parcela) - 1);
-
-// // Valor total pago (VT)
-// let total = mensal * parcela;
-
-// // Juros totais (J)
-// let juros = total - emprestimo;
-
-// // Exibindo os resultados
-// console.log("Parcela mensal (PMT): R$ " + mensal.toFixed(2));
-// console.log("Valor total pago (VT): R$ " + total.toFixed(2));
-// console.log("Juros totais (J): R$ " + juros.toFixed(2));
