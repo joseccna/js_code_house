@@ -12,3 +12,18 @@ function receber(){
         document.getElementById('resultado').innerText ="O número " + primeiro +" não é múltiplo do número "+ segundo;
     }
 }
+
+//////////////////////////////////////////////
+// segunda maneira de fazer.
+
+function receber1(numero1, numero2){
+ return numero1 % numero2 === 0
+
+}
+
+if(receber1(9,3)){
+    console.log('São multiplos');
+}
+else{
+    console.log('Não são multiplos');
+}
