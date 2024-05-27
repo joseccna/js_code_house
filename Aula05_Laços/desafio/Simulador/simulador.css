@@ -1,0 +1,20 @@
+.apresentar{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+
+}
+
+#resposta{
+    width: 280px;
+    height: 100px;
+}
+
+.continuar{
+    width: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+}
+
