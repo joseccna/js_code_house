@@ -54,6 +54,7 @@ function recebe_mes(parcela1){
    valor = parseInt(document.getElementById('valor').value);
     if(isNaN(valor)){
         alert('Favor colocar o valor do emprestimo!')
+        return;
     }
  
     
